@@ -17,14 +17,20 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+private val HammersmithOne = FontFamily(
+    Font(R.font.hammersmith_one_regular),
+)
 
 // Set of Material typography styles to start with
 val typography = Typography(
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = HammersmithOne,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
     )
